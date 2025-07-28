@@ -1,0 +1,493 @@
+[
+  {
+    "name": "Trendy Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 13471,
+    "img": "",
+    "description": "Trendy Platform — Minimal and ideal for any occasion.",
+    "isFeatured": true
+  },
+  {
+    "name": "Minimal Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 8474,
+    "img": "",
+    "description": "Minimal Kitten Heel — Premium and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 8594,
+    "img": "",
+    "description": "Luxurious Kitten Heel — Comfortable and crafted for confidence.",
+    "isFeatured": true
+  },
+  {
+    "name": "Premium Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 19874,
+    "img": "",
+    "description": "Premium Platform — Comfortable and crafted for confidence.",
+    "isFeatured": true
+  },
+  {
+    "name": "Luxurious Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 8144,
+    "img": "",
+    "description": "Luxurious Pencil Heel — Comfortable and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Comfortable Wedge",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "wedge",
+    "price": 8817,
+    "img": "",
+    "description": "Comfortable Wedge — Trendy and ideal for any occasion.",
+    "isFeatured": true
+  },
+  {
+    "name": "Trendy Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 9304,
+    "img": "",
+    "description": "Trendy Pencil Heel — Luxurious and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Comfortable Block Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "block heel",
+    "price": 19778,
+    "img": "",
+    "description": "Comfortable Block Heel — Stylish and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 8694,
+    "img": "",
+    "description": "Premium Kitten Heel — Luxurious and crafted for confidence.",
+    "isFeatured": true
+  },
+  {
+    "name": "Premium Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 8356,
+    "img": "",
+    "description": "Premium Pencil Heel — Trendy and with a flawless finish.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Block Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "block heel",
+    "price": 13670,
+    "img": "",
+    "description": "Luxurious Block Heel — Elegant and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 7745,
+    "img": "",
+    "description": "Premium Platform — Comfortable and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Trendy Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 10410,
+    "img": "",
+    "description": "Trendy Platform — Minimal and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Trendy Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 8466,
+    "img": "",
+    "description": "Trendy Kitten Heel — Minimal and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 18429,
+    "img": "",
+    "description": "Premium Pencil Heel — Luxurious and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Comfortable Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 7203,
+    "img": "",
+    "description": "Comfortable Kitten Heel — Comfortable and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 7561,
+    "img": "",
+    "description": "Luxurious Kitten Heel — Luxurious and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 13273,
+    "img": "",
+    "description": "Elegant Pencil Heel — Premium and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 16767,
+    "img": "",
+    "description": "Elegant Platform — Luxurious and with a flawless finish.",
+    "isFeatured": true
+  },
+  {
+    "name": "Premium Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 15032,
+    "img": "",
+    "description": "Premium Platform — Elegant and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Minimal Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 13718,
+    "img": "",
+    "description": "Minimal Kitten Heel — Trendy and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 14178,
+    "img": "",
+    "description": "Luxurious Pencil Heel — Comfortable and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Platform",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 17564,
+    "img": "",
+    "description": "Premium Platform — Elegant and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Kitten Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "kitten heel",
+    "price": 10459,
+    "img": "",
+    "description": "Elegant Kitten Heel — Luxurious and ideal for any occasion.",
+    "isFeatured": true
+  },
+  {
+    "name": "Comfortable Block Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "block heel",
+    "price": 11665,
+    "img": "",
+    "description": "Comfortable Block Heel — Minimal and made for style seekers.",
+    "isFeatured": false
+  }
+
+  {
+    "name": "Elegant Wedge Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "wedge sandal",
+    "price": 13949,
+    "img": "",
+    "description": "Elegant Wedge Sandal — Premium and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Minimal Gladiator Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "gladiator",
+    "price": 7922,
+    "img": "",
+    "description": "Minimal Gladiator Sandal — Comfortable and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Ankle Strap Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "ankle strap",
+    "price": 12861,
+    "img": "",
+    "description": "Luxurious Ankle Strap Sandal — Premium and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Comfortable Flat Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "flat",
+    "price": 7133,
+    "img": "",
+    "description": "Comfortable Flat Sandal — Stylish and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Wedge Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "wedge sandal",
+    "price": 9406,
+    "img": "",
+    "description": "Elegant Wedge Sandal — Luxurious and ideal for any occasion.",
+    "isFeatured": true
+  },
+  {
+    "name": "Luxurious Combat Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "combat",
+    "price": 20489,
+    "img": "",
+    "description": "Luxurious Combat Boot — Comfortable and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Minimal Ankle Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "ankle",
+    "price": 9765,
+    "img": "",
+    "description": "Minimal Ankle Boot — Trendy and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Stylish Knee-High Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "knee-high",
+    "price": 11584,
+    "img": "",
+    "description": "Stylish Knee-High Boot — Elegant and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Chelsea Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "chelsea",
+    "price": 22376,
+    "img": "",
+    "description": "Elegant Chelsea Boot — Comfortable and with a flawless finish.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Snow Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "snow",
+    "price": 18529,
+    "img": "",
+    "description": "Premium Snow Boot — Premium and ideal for any occasion.",
+    "isFeatured": true
+  },
+  {
+    "name": "Elegant Ankle Boot",
+    "category": "boots",
+    "gender": "men",
+    "subtype": "ankle",
+    "price": 13125,
+    "img": "",
+    "description": "Elegant Ankle Boot — Trendy and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Stylish Combat Boot",
+    "category": "boots",
+    "gender": "men",
+    "subtype": "combat",
+    "price": 10987,
+    "img": "",
+    "description": "Stylish Combat Boot — Elegant and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Snow Boot",
+    "category": "boots",
+    "gender": "unisex",
+    "subtype": "snow",
+    "price": 17344,
+    "img": "",
+    "description": "Premium Snow Boot — Luxurious and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Minimal Chelsea Boot",
+    "category": "boots",
+    "gender": "unisex",
+    "subtype": "chelsea",
+    "price": 18745,
+    "img": "",
+    "description": "Minimal Chelsea Boot — Elegant and crafted for confidence.",
+    "isFeatured": true
+  },
+  {
+    "name": "Comfortable Gladiator Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "gladiator",
+    "price": 6690,
+    "img": "",
+    "description": "Comfortable Gladiator Sandal — Comfortable and with a flawless finish.",
+    "isFeatured": false
+  },
+  {
+    "name": "Premium Flat Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "flat",
+    "price": 11333,
+    "img": "",
+    "description": "Premium Flat Sandal — Stylish and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Ankle Strap Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "ankle strap",
+    "price": 10099,
+    "img": "",
+    "description": "Elegant Ankle Strap Sandal — Elegant and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Wedge Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "wedge sandal",
+    "price": 11842,
+    "img": "",
+    "description": "Luxurious Wedge Sandal — Luxurious and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Gladiator Sandal",
+    "category": "sandals",
+    "gender": "women",
+    "subtype": "gladiator",
+    "price": 9054,
+    "img": "",
+    "description": "Elegant Gladiator Sandal — Premium and crafted for confidence.",
+    "isFeatured": true
+  },
+  {
+    "name": "Stylish Knee-High Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "knee-high",
+    "price": 10482,
+    "img": "",
+    "description": "Stylish Knee-High Boot — Premium and made for style seekers.",
+    "isFeatured": false
+  },
+  {
+    "name": "Elegant Block Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "block heel",
+    "price": 12867,
+    "img": "",
+    "description": "Elegant Block Heel — Luxurious and with a flawless finish.",
+    "isFeatured": false
+  },
+  {
+    "name": "Comfortable Pencil Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "pencil heel",
+    "price": 8890,
+    "img": "",
+    "description": "Comfortable Pencil Heel — Elegant and crafted for confidence.",
+    "isFeatured": false
+  },
+  {
+    "name": "Luxurious Ankle Boot",
+    "category": "boots",
+    "gender": "women",
+    "subtype": "ankle",
+    "price": 15421,
+    "img": "",
+    "description": "Luxurious Ankle Boot — Luxurious and ideal for any occasion.",
+    "isFeatured": false
+  },
+  {
+    "name": "Stylish Platform Heel",
+    "category": "heels",
+    "gender": "women",
+    "subtype": "platform",
+    "price": 18645,
+    "img": "",
+    "description": "Stylish Platform Heel — Premium and made for style seekers.",
+    "isFeatured": false
+  }
+]
