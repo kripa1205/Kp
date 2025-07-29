@@ -1,45 +1,45 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { Container, Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
+import { Button, Container, Row, Col, Image } from 'react-bootstrap';
+import { CartContext } from '../context/CartContext';
 
-function ProductDetail() {
+const ProductDetail = () => {
   const { id } = useParams();
-    const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState(null);
+  const { addToCart } = useContext(CartContext);
 
-      useEffect(() => {
-          axios.get(`http://localhost:5000/api/products/${id}`)
-                .then(res => setProduct(res.data))
-                      .catch(err => console.error('Error loading product', err));
-                        }, [id]);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const res = await axios.get(`http://localhost:5000/api/products/${id}`);
+        setProduct(res.data);
+      } catch (err) {
+        console.error('Failed to fetch product:', err);
+      }
+    };
+    fetchProduct();
+  }, [id]);
 
-                          if (!product) return <p className="text-center mt-5">Loading...</p>;
+  if (!product) return <p>Loading...</p>;
 
-                            return (
-                                <>
-                                      <Navbar />
-                                            <Container className="my-5">
-                                                    <Row>
-                                                              <Col md={6}>
-                                                                          <img
-                                                                                        src={product.img || ''}
-                                                                                                      alt={product.name}
-                                                                                                                    className="img-fluid"
-                                                                                                                                />
-                                                                                                                                          </Col>
-                                                                                                                                                    <Col md={6}>
-                                                                                                                                                                <h2>{product.name}</h2>
-                                                                                                                                                                            <p className="text-muted">${product.price}</p>
-                                                                                                                                                                                        <p>{product.description}</p>
-                                                                                                                                                                                                    <Button variant="dark">Add to Cart</Button>
-                                                                                                                                                                                                              </Col>
-                                                                                                                                                                                                                      </Row>
-                                                                                                                                                                                                                            </Container>
-                                                                                                                                                                                                                                  <Footer />
-                                                                                                                                                                                                                                      </>
-                                                                                                                                                                                                                                        );
-                                                                                                                                                                                                                                        }
+  return (
+    <Container className="py-4">
+      <Row>
+        <Col md={6}>
+          <Image src={product.image} fluid style={{ height: '400px', objectFit: 'cover' }} />
+        </Col>
+        <Col md={6}>
+          <h2>{product.name}</h2>
+          <p>{product.description}</p>
+          <h4>₹{product.price}</h4>
+          <Button variant="dark" onClick={() => addToCart(product)}>
+            Add to Cart
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
-                                                                                                                                                                                                                                        export default ProductDetail;
+export default ProductDetail;
