@@ -1,55 +1,62 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { Container, Button, Table } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
+import { Button, Container, Row, Col, Image } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-function Cart() {
-  // Placeholder cart data (replace with context or API later)
-    const cartItems = [];
+const Cart = () => {
+  const { cartItems, removeFromCart, updateQuantity, getTotalPrice } = useContext(CartContext);
+  const navigate = useNavigate();
 
-      return (
-          <>
-                <Navbar />
-                      <Container className="my-5">
-                              <h3>Your Cart</h3>
+  if (cartItems.length === 0) {
+    return (
+      <Container className="py-4">
+        <h2>Your Cart</h2>
+        <p>Your cart is empty.</p>
+        <Button variant="outline-dark" onClick={() => navigate('/products')}>
+          Go Shopping
+        </Button>
+      </Container>
+    );
+  }
 
-                                      {cartItems.length === 0 ? (
-                                                <p>Your cart is empty.</p>
-                                                        ) : (
-                                                                  <>
-                                                                              <Table striped bordered hover responsive>
-                                                                                            <thead>
-                                                                                                            <tr>
-                                                                                                                              <th>Product</th>
-                                                                                                                                                <th>Qty</th>
-                                                                                                                                                                  <th>Price</th>
-                                                                                                                                                                                    <th>Subtotal</th>
-                                                                                                                                                                                                      <th>Remove</th>
-                                                                                                                                                                                                                      </tr>
-                                                                                                                                                                                                                                    </thead>
-                                                                                                                                                                                                                                                  <tbody>
-                                                                                                                                                                                                                                                                  {cartItems.map((item, idx) => (
-                                                                                                                                                                                                                                                                                    <tr key={idx}>
-                                                                                                                                                                                                                                                                                                        <td>{item.name}</td>
-                                                                                                                                                                                                                                                                                                                            <td>{item.qty}</td>
-                                                                                                                                                                                                                                                                                                                                                <td>${item.price}</td>
-                                                                                                                                                                                                                                                                                                                                                                    <td>${item.qty * item.price}</td>
-                                                                                                                                                                                                                                                                                                                                                                                        <td><Button variant="danger" size="sm">X</Button></td>
-                                                                                                                                                                                                                                                                                                                                                                                                          </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                          ))}
-                                                                                                                                                                                                                                                                                                                                                                                                                                        </tbody>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    </Table>
+  return (
+    <Container className="py-4">
+      <h2 className="mb-4">Your Cart</h2>
+      {cartItems.map((item) => (
+        <Row key={item._id} className="mb-3 align-items-center border-bottom pb-3">
+          <Col md={2}>
+            <Image src={item.image} fluid style={{ height: '100px', objectFit: 'cover' }} />
+          </Col>
+          <Col md={4}>
+            <h5>{item.name}</h5>
+            <p>₹{item.price}</p>
+          </Col>
+          <Col md={2}>
+            <input
+              type="number"
+              min="1"
+              value={item.quantity}
+              onChange={(e) => updateQuantity(item._id, parseInt(e.target.value))}
+              className="form-control"
+            />
+          </Col>
+          <Col md={2}>
+            <p>₹{item.price * item.quantity}</p>
+          </Col>
+          <Col md={2}>
+            <Button variant="danger" onClick={() => removeFromCart(item._id)}>
+              Remove
+            </Button>
+          </Col>
+        </Row>
+      ))}
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div className="text-end">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <h5>Total: $0.00</h5>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <Button variant="dark" href="/checkout">Go to Checkout</Button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </Container>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <Footer />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+      <h4 className="mt-4">Total: ₹{getTotalPrice()}</h4>
+      <Button variant="dark" className="mt-3" onClick={() => navigate('/checkout')}>
+        Proceed to Checkout
+      </Button>
+    </Container>
+  );
+};
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            export default Cart;
+export default Cart;
