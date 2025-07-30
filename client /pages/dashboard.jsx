@@ -23,15 +23,15 @@ function Dashboard() {
   };
 
   const orders = [
-    { id: 'ORD123', item: 'Blush Heel', total: '$4,999', status: 'Delivered' },
-    { id: 'ORD124', item: 'Winter Boot', total: '$12,000', status: 'Shipped' },
+    { id: 'ORD123', item: 'Blush Heel', total: '₹4,999', status: 'Delivered' },
+    { id: 'ORD124', item: 'Winter Boot', total: '₹12,000', status: 'Shipped' },
   ];
 
   return (
     <>
       <Navbar />
-      <Container className="my-5">
-        <h3 className="mb-4">My Dashboard</h3>
+      <Container className="my-5" style={{ maxWidth: '700px' }}>
+        <h3 className="mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>My Dashboard</h3>
 
         <Card className="mb-4 p-3 shadow-sm">
           <h5>Hello, <i>{user?.name}</i></h5>
@@ -39,7 +39,7 @@ function Dashboard() {
         </Card>
 
         <Card className="mb-4 p-3 shadow-sm">
-          <h5>My Orders</h5>
+          <h5 className="mb-3">My Orders</h5>
           {orders.map((order, index) => (
             <div key={index} className="border-bottom py-2">
               <strong>{order.item}</strong> — {order.total} — {order.status}
