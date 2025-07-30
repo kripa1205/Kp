@@ -1,8 +1,10 @@
 import React from 'react';
-import { Navbar, Container, Nav, Button, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
 function MainNavbar() {
-  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  const userInfo = localStorage.getItem('userInfo')
+    ? JSON.parse(localStorage.getItem('userInfo'))
+    : null;
 
   const handleLogout = () => {
     localStorage.removeItem('userInfo');
@@ -10,26 +12,24 @@ function MainNavbar() {
   };
 
   return (
-    <Navbar bg="light" expand="lg" className="shadow-sm py-3">
+    <Navbar bg="light" expand="lg" className="shadow-sm">
       <Container>
-        <Navbar.Brand
-          href="/"
-          style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600', fontSize: '1.5rem' }}
-        >
+        <Navbar.Brand href="/" style={{ fontFamily: 'Playfair Display, serif', fontWeight: '600' }}>
           Rose Luxe
         </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="align-items-center">
-          <Nav className="ms-auto me-3">
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/products">Shop</Nav.Link>
             <Nav.Link href="/cart">Cart</Nav.Link>
 
             {userInfo ? (
               <>
-                <Nav.Link href="/dashboard">👋 <i>{userInfo.name.split(' ')[0]}</i></Nav.Link>
-                <Button variant="outline-dark" size="sm" onClick={handleLogout} className="ms-2">
+                <Nav.Link href="/dashboard">
+                  👋 {userInfo.name?.split(' ')[0]}
+                </Nav.Link>
+                <Button variant="outline-dark" size="sm" onClick={handleLogout}>
                   Logout
                 </Button>
               </>
@@ -37,17 +37,6 @@ function MainNavbar() {
               <Nav.Link href="/login">Login</Nav.Link>
             )}
           </Nav>
-
-          {/* Search Bar */}
-          <Form className="d-flex w-100 mt-2 mt-lg-0">
-            <FormControl
-              type="search"
-              placeholder="Search for luxury footwear..."
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="dark">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
