@@ -21,13 +21,16 @@ const Products = () => {
 
   return (
     <Container className="py-4">
-      <h2 className="mb-4">Our Collection</h2>
+      <h2 className="mb-4 text-center" style={{ fontFamily: 'Playfair Display, serif' }}>
+        Our Collection
+      </h2>
+
       <Row>
         {products.length === 0 ? (
-          <p>No products found.</p>
+          <p className="text-center">No products found.</p>
         ) : (
           products.map((product) => (
-            <Col key={product._id} sm={6} md={4} lg={3} className="mb-4">
+            <Col key={product._id} xs={12} sm={6} md={4} lg={3} className="mb-4">
               <ProductCard product={product} />
             </Col>
           ))
