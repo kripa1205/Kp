@@ -21,19 +21,24 @@ const ProductDetail = () => {
     fetchProduct();
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product) return <p className="text-center py-5">Loading...</p>;
 
   return (
-    <Container className="py-4">
-      <Row>
-        <Col md={6}>
-          <Image src={product.image} fluid style={{ height: '400px', objectFit: 'cover' }} />
+    <Container className="py-5">
+      <Row className="align-items-center">
+        <Col xs={12} md={6} className="mb-4 mb-md-0">
+          <Image
+            src={product.image}
+            fluid
+            className="w-100 rounded"
+            style={{ maxHeight: '450px', objectFit: 'cover' }}
+          />
         </Col>
-        <Col md={6}>
-          <h2>{product.name}</h2>
+        <Col xs={12} md={6}>
+          <h2 style={{ fontFamily: 'Playfair Display, serif' }}>{product.name}</h2>
           <p>{product.description}</p>
-          <h4>₹{product.price}</h4>
-          <Button variant="dark" onClick={() => addToCart(product)}>
+          <h4 className="mb-4">₹{product.price}</h4>
+          <Button variant="dark" size="lg" onClick={() => addToCart(product)}>
             Add to Cart
           </Button>
         </Col>
