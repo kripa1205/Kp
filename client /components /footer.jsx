@@ -1,16 +1,45 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function Footer() {
   return (
-      <footer className="bg-light text-center py-3 mt-5 border-top">
-            <Container>
-                    <small style={{ color: '#6E5773' }}>
-                              © 2025 <strong>Rose Luxe</strong> — All rights reserved.
-                                      </small>
-                                            </Container>
-                                                </footer>
-                                                  );
-                                                  }
+    <footer className="bg-light text-dark py-5 mt-5 border-top">
+      <Container>
+        <Row>
+          <Col md={4} className="mb-4">
+            <h5 style={{ fontFamily: 'Playfair Display, serif' }}>Rose Luxe</h5>
+            <p style={{ fontStyle: 'italic' }}>
+              Elevating every step with luxury-crafted footwear.
+            </p>
+          </Col>
 
-                                                  export default Footer;
+          <Col md={4} className="mb-4">
+            <h6 className="fw-bold">Support</h6>
+            <ul className="list-unstyled">
+              <li><a href="/contact" className="text-decoration-none text-dark">Contact Us</a></li>
+              <li><a href="/faq" className="text-decoration-none text-dark">FAQ</a></li>
+              <li><a href="/returns" className="text-decoration-none text-dark">Returns & Refunds</a></li>
+            </ul>
+          </Col>
+
+          <Col md={4} className="mb-4">
+            <h6 className="fw-bold">Follow Us</h6>
+            <ul className="list-unstyled">
+              <li><a href="#" className="text-decoration-none text-dark">Instagram</a></li>
+              <li><a href="#" className="text-decoration-none text-dark">Pinterest</a></li>
+              <li><a href="#" className="text-decoration-none text-dark">Facebook</a></li>
+            </ul>
+          </Col>
+        </Row>
+
+        <hr />
+
+        <p className="text-center text-muted small mb-0">
+          © {new Date().getFullYear()} Rose Luxe. All rights reserved.
+        </p>
+      </Container>
+    </footer>
+  );
+}
+
+export default Footer;
